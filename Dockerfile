@@ -8,7 +8,7 @@ RUN yarn install && npm run build:prod
 FROM golang:alpine AS development
 WORKDIR $GOPATH/src
 ENV GO111MODULE=on
-ENV GOPROXY="https://goproxy.io"
+ENV GOPROXY="https://goproxy.cn"
 ENV CGO_ENABLED=1
 COPY . .
 
